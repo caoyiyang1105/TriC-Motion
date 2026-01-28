@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="TriC-Motion: Tri-Domain Causal Modeling Grounded Text-to-Motion Generation">
+        content="TriC-Motion">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TriC-Motion: Tri-Domain Causal Modeling Grounded Text-to-Motion Generation</title>
@@ -33,7 +33,10 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- Explicitly override favicon with an empty data URI to remove tab icon -->
+  <link rel="icon" href="data:,">
+  <link rel="shortcut icon" href="data:,">
+  <link rel="apple-touch-icon" href="data:,">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -85,12 +88,13 @@
 </nav>
 
  -->
-<section class="hero">
+<section class="hero is-white main-hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">TriC-Motion: Tri-Domain Causal Modeling Grounded Text-to-Motion Generation</h1>
+          <div class="conference-tag">ICLR 2026</div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Yiyang Cao</a><sup>1*</sup>,</span>
@@ -184,7 +188,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="hero teaser is-white">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -257,7 +261,7 @@
 </section> -->
 
 
-<section class="section generation-section">
+<section class="section abstract-section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -281,7 +285,7 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Approach Overview</h2>
+        <h2 class="title is-3">Overview</h2>
         <div class="publication-video">
           <img src="./static/images/overview.jpg"
                  class="interpolation-image"
@@ -295,7 +299,7 @@
 </section>
 
 
-<section class="section">
+<section class="section gallery-section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -405,23 +409,23 @@
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp1/ours.mp4"></video>
-              <p class="comparison-label">Ours</p>
+              <p class="comparison-label"><strong>Ours</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp1/mardm.mp4"></video>
-              <p class="comparison-label">MARDM<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>MARDM<br>(CVPR 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp1/motionlcm.mp4"></video>
-              <p class="comparison-label">MotionLCM-v2<br>(ECCV 2024)</p>
+              <p class="comparison-label"><strong>MotionLCM-v2<br>(ECCV 2024)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp1/streamer.mp4"></video>
-              <p class="comparison-label">MotionStreamer<br>(ICCV 2025)</p>
+              <p class="comparison-label"><strong>MotionStreamer<br>(ICCV 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp1/salad.mp4"></video>
-              <p class="comparison-label">SALAD<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>SALAD<br>(CVPR 2025)</strong></p>
             </div>
           </div>
           <div class="comparison-grid comparison-grid--six">
@@ -435,23 +439,23 @@
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp2/ours.mp4"></video>
-              <p class="comparison-label">Ours</p>
+              <p class="comparison-label"><strong>Ours</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp2/mardm.mp4"></video>
-              <p class="comparison-label">MARDM<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>MARDM<br>(CVPR 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp2/motionlcm.mp4"></video>
-              <p class="comparison-label">MotionLCM-v2<br>(ECCV 2024)</p>
+              <p class="comparison-label"><strong>MotionLCM-v2<br>(ECCV 2024)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp2/streamer.mp4"></video>
-              <p class="comparison-label">MotionStreamer<br>(ICCV 2025)</p>
+              <p class="comparison-label"><strong>MotionStreamer<br>(ICCV 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp2/salad.mp4"></video>
-              <p class="comparison-label">SALAD<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>SALAD<br>(CVPR 2025)</strong></p>
             </div>
           </div>
           <div class="comparison-grid comparison-grid--six">
@@ -465,23 +469,23 @@
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp3/ours.mp4"></video>
-              <p class="comparison-label">Ours</p>
+              <p class="comparison-label"><strong>Ours</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp3/mardm.mp4"></video>
-              <p class="comparison-label">MARDM<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>MARDM<br>(CVPR 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp3/motionlcm.mp4"></video>
-              <p class="comparison-label">MotionLCM-v2<br>(ECCV 2024)</p>
+              <p class="comparison-label"><strong>MotionLCM-v2<br>(ECCV 2024)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp3/streamer.mp4"></video>
-              <p class="comparison-label">MotionStreamer<br>(ICCV 2025)</p>
+              <p class="comparison-label"><strong>MotionStreamer<br>(ICCV 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp3/salad.mp4"></video>
-              <p class="comparison-label">SALAD<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>SALAD<br>(CVPR 2025)</strong></p>
             </div>
           </div>
           <div class="comparison-grid comparison-grid--six">
@@ -495,23 +499,23 @@
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp4/ours.mp4"></video>
-              <p class="comparison-label">Ours</p>
+              <p class="comparison-label"><strong>Ours</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp4/mardm.mp4"></video>
-              <p class="comparison-label">MARDM<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>MARDM<br>(CVPR 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp4/motionlcm.mp4"></video>
-              <p class="comparison-label">MotionLCM-v2<br>(ECCV 2024)</p>
+              <p class="comparison-label"><strong>MotionLCM-v2<br>(ECCV 2024)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp4/streamer.mp4"></video>
-              <p class="comparison-label">MotionStreamer<br>(ICCV 2025)</p>
+              <p class="comparison-label"><strong>MotionStreamer<br>(ICCV 2025)</strong></p>
             </div>
             <div class="comparison-card">
               <video class="comparison-video" autoplay muted loop playsinline controls src="./static/videos/cmp4/salad.mp4"></video>
-              <p class="comparison-label">SALAD<br>(CVPR 2025)</p>
+              <p class="comparison-label"><strong>SALAD<br>(CVPR 2025)</strong></p>
             </div>
           </div>
         </div>
